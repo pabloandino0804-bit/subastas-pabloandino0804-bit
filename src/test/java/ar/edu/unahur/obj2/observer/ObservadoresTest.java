@@ -41,12 +41,10 @@ public class ObservadoresTest {
         producto.registrarUnaOferta(oferta3);
 
         // Debe devolver
-        ISubastador subUltimaOferta = producto.getSubastadores().stream().filter(s -> s == martomau).findAny()
-                .orElse(diazdan);
         ISubastador subDado1 = gozanger.getUltimaOferta().getSubastador();
         ISubastador subDado2 = martomau.getUltimaOferta().getSubastador();
-        assertEquals(subDado1.getNombre(), subUltimaOferta.getNombre());
-        assertEquals(subDado2.getNombre(), subUltimaOferta.getNombre());
+        assertEquals(subDado1, oferta3.getSubastador());
+        assertEquals(subDado2, oferta3.getSubastador());
         assertTrue(producto.getSubastadores().contains(martomau));
     }
 
