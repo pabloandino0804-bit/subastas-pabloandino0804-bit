@@ -30,10 +30,10 @@ public class Subastador implements ISubastador {
     public void agregarOferta(Oferta nuevaOferta) {
         if (ultimaOferta == null) {
             this.ultimaOferta = nuevaOferta;
-            System.out.print("El subastador " + nombre + "ha recibido la oferta ");
+            System.out.println("El subastador " + nombre + " ha recibido la oferta.");
         } else if (sePuedeAgregar(nuevaOferta)) {
             this.ultimaOferta = nuevaOferta;
-            System.out.print("El subastador " + nombre + "ha recibido la oferta ");
+            System.out.println("El subastador " + nombre + " ha recibido la oferta.");
         }
     }
 

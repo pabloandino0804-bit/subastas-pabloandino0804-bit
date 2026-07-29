@@ -19,4 +19,7 @@ public class Oferta {
         return valor;
     }
 
+    public void aumentar(Double valorDado) {
+        this.valor += valorDado;
+    }
 }

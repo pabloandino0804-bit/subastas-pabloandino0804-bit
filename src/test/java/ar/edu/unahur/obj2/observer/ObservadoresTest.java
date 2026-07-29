@@ -88,9 +88,9 @@ public class ObservadoresTest {
     @Test
     void dadoElEscenario1_elProductoSubestimadoDebeTenerRegistrado_las3Ofertas() {
         // Dado
-        Oferta oferta1 = new Oferta(martomau, 20.0);
-        Oferta oferta2 = new Oferta(gozanger, 35.0);
-        Oferta oferta3 = new Oferta(martomau, 30.0);
+        Oferta oferta1 = new Oferta(martomau, 30.0);
+        Oferta oferta2 = new Oferta(gozanger, 5.0);
+        Oferta oferta3 = new Oferta(martomau, 19.0);
 
         // When
         producto.registrarUnaOferta(oferta1);
