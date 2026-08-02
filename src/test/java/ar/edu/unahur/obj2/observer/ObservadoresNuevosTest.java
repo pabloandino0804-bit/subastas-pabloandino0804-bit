@@ -34,7 +34,7 @@ public class ObservadoresNuevosTest {
     void dadoElEscenario1_ambosSubastadoresDebenRecibirLaUltimaOfertaRealizada() {
         // Dado
         Oferta oferta1 = new Oferta(martomau, 10.0);
-        Oferta oferta2 = new Oferta(gozanger, 25.0);
+        Oferta oferta2 = new Oferta(gozanger, 15.0);
         Oferta oferta3 = new Oferta(martomau, 20.0);
 
         // When
@@ -54,7 +54,7 @@ public class ObservadoresNuevosTest {
     void dadoElEscenario1_laUltimaOfertaEnAmbosSubastadores_debeSerLAQuePerteneceAMartomau() {
         // Dado
         Oferta oferta1 = new Oferta(martomau, 10.0);
-        Oferta oferta2 = new Oferta(gozanger, 25.0);
+        Oferta oferta2 = new Oferta(gozanger, 15.0);
         Oferta oferta3 = new Oferta(martomau, 20.0);
 
         // When
@@ -73,7 +73,7 @@ public class ObservadoresNuevosTest {
     void dadoElEscenario1_elValorDelaUltimaOfertaEnAmbosSubastadoresDebeSer30() {
         // Dado
         Oferta oferta1 = new Oferta(martomau, 10.0);
-        Oferta oferta2 = new Oferta(gozanger, 25.0);
+        Oferta oferta2 = new Oferta(gozanger, 15.0);
         Oferta oferta3 = new Oferta(martomau, 20.0);
 
         // When
